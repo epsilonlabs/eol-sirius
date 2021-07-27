@@ -1,6 +1,12 @@
 # eol-sirius
 Embedding EOL editors into Sirius-based graphical workbenches
 
+Prerequisites:
+
+1. Eclipse ≥ 2020-06
+2. Epsilon ≥ 2.0 
+3. Sirius ≥ 6.3
+
 To run:
 
 1. Clone repo
