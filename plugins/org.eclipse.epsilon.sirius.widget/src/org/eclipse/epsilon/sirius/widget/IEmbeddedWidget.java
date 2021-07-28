@@ -33,5 +33,7 @@ public interface IEmbeddedWidget {
 	public void setEnabled(boolean enabled);
 	
 	public String getLanguageName();
+	
+	public void dispose();
 
 }

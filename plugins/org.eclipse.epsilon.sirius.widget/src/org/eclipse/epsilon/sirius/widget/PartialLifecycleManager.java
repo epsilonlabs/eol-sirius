@@ -95,7 +95,10 @@ private EEFCustomWidgetDescription description;
 
 	@Override
 	public void dispose() {
-		controller.saveText(widget.getText());
+		if (widget != null) {
+			controller.saveText(widget.getText());
+			widget.dispose();
+		}
 		super.dispose();
 	}
 

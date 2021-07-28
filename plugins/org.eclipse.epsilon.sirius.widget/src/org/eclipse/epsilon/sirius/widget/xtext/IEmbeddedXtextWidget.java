@@ -7,17 +7,18 @@
 *
 * SPDX-License-Identifier: EPL-2.0
 **********************************************************************/
-package org.eclipse.epsilon.sirius.widget.examples.statemachine.design;
+package org.eclipse.epsilon.sirius.widget.xtext;
 
-import org.eclipse.epsilon.sirius.widget.examples.statemachine.StateMachine;
+import org.eclipse.emf.ecore.resource.ResourceSet;
 
-/**
- * The services class used by VSM.
- */
-public class Services {
-	public void execute(StateMachine self) { 		
-    	 StatemachineJob j = new StatemachineJob("Running State Machine", self.getInitialState());
-    	 j.setUser(true);
-    	 j.schedule();
-    }
+import com.google.inject.Injector;
+
+public interface IEmbeddedXtextWidget {
+	
+	public Injector getLanguageInjector();
+	
+	public EmbeddedResourceProvider getResourceProvider();
+	
+	public ResourceSet getSiriusResourceSet();
+	
 }

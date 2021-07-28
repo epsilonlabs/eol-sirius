@@ -9,7 +9,7 @@
 **********************************************************************/
 package org.eclipse.epsilon.sirius.widget.examples.statemachine.eol.widget;
 
-import org.eclipse.epsilon.sirius.widget.AbstractEolEditorWidget;
+import org.eclipse.epsilon.sirius.widget.eol.AbstractEolEditorWidget;
 import org.eclipse.epsilon.sirius.widget.examples.statemachine.NamedElement;
 import org.eclipse.epsilon.sirius.widget.examples.statemachine.State;
 import org.eclipse.epsilon.sirius.widget.examples.statemachine.Transition;
