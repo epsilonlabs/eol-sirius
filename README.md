@@ -28,9 +28,9 @@ This repository contains a minimal example showing how to embed an EOL Editor in
 
 ## Embedding an EOL editor into a Sirius modeller
 
-1. Firstly, the metamodel needs to be modified to store EOL code in the model. In the state machine example, we are storing the EOL code in String attributes. See `org.eclipse.epsilon.sirius.widget.examples.statemachine` for mode details.
+1. Firstly, the metamodel needs to be modified to store EOL code in the model. In the state machine example, we are storing the EOL code in String attributes. See `org.eclipse.epsilon.sirius.widget.examples.statemachine` for more details.
 ![image](https://user-images.githubusercontent.com/10147329/127322137-4bf9b34c-7dd2-484c-b407-7526cdacfb3c.png) 
-2. You then need to create a new Eclipse plug-in for the widget. This plug-in should use the `org.eclipse.epsilon.sirius.widget` extension point and extend the `AbstractEolEditorWidget` class to provide details of how to load and save the EOL expressions. See `org.eclipse.epsilon.sirius.widget.examples.statemachine.eol.widget` for mode details.
+2. You then need to create a new Eclipse plug-in for the widget. This plug-in should use the `org.eclipse.epsilon.sirius.widget` extension point and extend the `AbstractEolEditorWidget` class to provide details of how to load and save the EOL expressions. See `org.eclipse.epsilon.sirius.widget.examples.statemachine.eol.widget` for more details.
 3. You need to modify the Sirius viewpoint specification model (odesign) model to add the widget to the properties view. To do this:
     1. Right-click on the group (folder) in the odesign model and select New Properties > Extend Default Properties View. ![image](https://user-images.githubusercontent.com/10147329/127322787-82395483-1e3c-4375-a836-df1ef6f1cc23.png)
     2. Under the category, create a new page and restrict the "Domain Class" to be model elements that contain EOL expressions. ![image](https://user-images.githubusercontent.com/10147329/127322993-7a6bab38-c847-471a-9216-2a40e4ea9161.png) ![image](https://user-images.githubusercontent.com/10147329/127323055-706c35d6-6c62-4d60-9b2b-92e9facb19fb.png)
